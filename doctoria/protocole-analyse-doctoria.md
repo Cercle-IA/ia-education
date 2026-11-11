@@ -210,6 +210,40 @@ Un contrôle utile, absent chez Anthropic : comparer le score de capacité théo
 - Avec 294 répondants, les analyses à plus de deux variables croisées sont réservées au niveau domaine.
 - Code versionné, graine aléatoire fixée, prompts et version du modèle archivés pour toute étape utilisant un LLM.
 
+### 5.11 Lecture par le cadre des 4D (AI Fluency)
+
+Source : Dakan et Feller, *Framework for AI Fluency, practical overview document*, version 1.1 du 13 janvier 2025 selon le document fourni (le nom du fichier indique 1.5), https://ringling.libguides.com/ai/framework, licence CC BY-NC-ND 4.0. Le cadre définit quatre compétences (Delegation, Description, Discernment, Diligence) et trois modalités d'interaction (Automation, Augmentation, Agency).
+
+L'étude Anthropic mesure où l'IA est utilisée. Le cadre des 4D décrit ce que l'utilisateur doit savoir faire. Les deux se complètent : le premier structure les étapes 3 à 6, le second structure l'étape 7 et les recommandations de formation.
+
+**Correspondance avec les variables DoctorIA** (proposition à valider) :
+
+| Compétence | Sous-catégories du cadre | Variables DoctorIA | Couverture |
+|---|---|---|---|
+| Delegation | Goal and task awareness, platform awareness, task delegation | `q14`, `q15` (quelles tâches), `q16` (quels outils), `q17` (rôles), `q12bis` (non-usage par choix), `q8_comprehension` | Bonne |
+| Description | Product, process, performance description | Aucune mesure directe. Indirectement : thème « Prompt » demandé en formation (`q28_themes`), `q10` | Très faible |
+| Discernment | Product, process, performance discernment | `q8_evaluation`, `q8_limites`, `q18`, `q19` (utilité de la vérification), risque « erreurs ou hallucinations » (`q22`) | Bonne |
+| Diligence | Creation, transparency, deployment diligence | `q20` (données sensibles), `q22` (intégrité, sécurité des données), `q23` (mention dans la thèse), `q24` à `q26` (cadre, comité de suivi), `q18_type` (vérification des sources) | Bonne |
+
+**Usages proposés.**
+
+1. **Indices par compétence.** Construire un indice pour Delegation, Discernment et Diligence, vérifier leur cohérence interne, et les décrire par domaine. Pas d'indice Description, faute d'items.
+2. **Croisement usage et compétences.** Tester si une intensité d'usage élevée s'accompagne d'un discernement et d'une diligence élevés. Repérer le profil « usage intense, diligence faible », qui est la cible prioritaire d'une formation.
+3. **Qualité de la délégation.** L'analyse capacité contre usage (étape 5) mesure, à l'échelle d'un domaine, si les doctorants délèguent là où l'IA est jugée capable. C'est une lecture agrégée de la compétence Delegation.
+4. **Modalités.** Rapprocher les rôles de `q17` et les 5 paliers d'Anthropic des trois modalités : assistif et partagé relèvent de l'Augmentation, délégué de l'Automation, autonome de l'Agency. Correspondance approximative, à présenter comme telle.
+5. **Grille de codage des verbatims.** Utiliser les 4 compétences et leurs 12 sous-catégories comme taxonomie fermée pour l'étape 6, à côté de la grille thématique inductive.
+6. **Besoins de formation.** Classer les thèmes de `q28_themes` par compétence (Outils vers Delegation, Prompt vers Description, Intégrité et Données vers Diligence) pour formuler les recommandations dans un vocabulaire partagé.
+7. **Module complémentaire.** Ajouter 3 ou 4 items sur Description (formulation de la demande, itération, consignes durables), seule compétence non couverte.
+8. **Déclaration de diligence.** Joindre au rapport une déclaration d'usage de l'IA sur le modèle de celle qui clôt le document de Dakan et Feller, puisque l'analyse elle-même mobilise un LLM.
+
+**Réserves.**
+
+- Le cadre est un outil pratique d'orientation, pas une échelle de mesure validée. Les indices sont descriptifs.
+- Les items DoctorIA n'ont pas été conçus à partir du cadre. La vérification (`q18`) relève à la fois de Discernment (évaluer la sortie) et de Deployment diligence (se porter garant). Fixer une règle d'affectation avant analyse.
+- Une compétence déclarée n'est pas une compétence observée.
+- La modalité Agency est presque absente du questionnaire.
+- La licence interdit de diffuser une version modifiée du cadre. Le citer et s'y référer, sans en republier une adaptation.
+
 ## 6. Hypothèses confirmatoires
 
 Tirées des résultats d'Anthropic, formulées pour la population DoctorIA.
