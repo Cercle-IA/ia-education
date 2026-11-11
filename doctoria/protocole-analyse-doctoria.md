@@ -50,11 +50,11 @@ L'étude précise elle-même que ses scénarios sont illustratifs et non des pr�
 
 1. **Lignes de test.** Les identifiants 3, 4 et 5 portent des verbatims du type « Test de soumission automatisée ». Après exclusion : **294 répondants, dont 253 utilisateurs et 41 non-utilisateurs**.
 2. **Deux schémas de clés** pour `q15`, `q16`, `q21`, `q22` : libellés français (juin à début septembre, environ 174 lignes) puis codes (`writing`, `time_saved`, à partir de septembre, environ 123 lignes, dont les 15 réponses en anglais). Une table de correspondance est nécessaire, et un effet de version doit être testé.
-3. **Variante de libellé.** Au moins une ligne porte « intégrité scientifique » au lieu de « intégrité académique ». Vérifier si le libellé a changé entre versions **[à confirmer]**.
+3. **Variante de libellé.** Le libellé « intégrité scientifique » apparaît à côté de « intégrité académique ». Vérifier si le libellé a changé entre versions **[à confirmer]**.
 4. **Colonnes vides.** `q1_genre` et `q1_tranche_age` ne contiennent aucune valeur. `q29_formats` n'a que 2 réponses.
 5. **Réponses « Autre » mêlées aux modalités fermées**, dans les listes (`q9`, `q13`, `q14`, `q17`, `q18_type`, `q27`, `q28_themes`) et comme clés supplémentaires dans les grilles.
 6. **Doublon de modalité** : « 70 Sciences de l'education » et « 70 Sciences de l'éducation ».
-7. **Incohérence de filtre** : un utilisateur a répondu à la fois à `q12` et `q12bis`.
+7. **Incohérence de filtre** : le filtre entre `q12` (utilisateurs) et `q12bis` (non-utilisateurs) n'est pas toujours respecté. Prévoir une règle de traitement.
 8. **Modalités à clarifier** : `q24` contient 221 « Peut-être » ; `q25` contient une modalité « Encouragé » isolée à côté de « Recommandé » et « Suggéré » ; les étiquettes de l'échelle 0 à 4 ne figurent pas dans l'export **[à confirmer]**.
 9. **Deux vagues de collecte** : juillet (132 réponses) et septembre (136). À traiter comme variable de contrôle.
 10. **Effectifs par section CNU faibles** : sur 46 sections, 2 seulement dépassent 20 répondants et la majorité en compte moins de 6.
@@ -109,16 +109,18 @@ Différence de nature à garder en tête dans toute comparaison : Anthropic obse
 - Reprendre le principe de confidentialité d'Anthropic : seules des étiquettes fermées sortent du texte libre, et les résultats ne sont publiés qu'en agrégat.
 - **Seuil de diffusion : aucune cellule de moins de 10 répondants.** Conséquence : pas de résultat par section CNU, seulement par école doctorale ou par domaine.
 - Les verbatims peuvent identifier leur auteur (discipline rare, sujet de thèse). Pas de citation sans paraphrase ou accord. Le fichier brut n'est pas versionné dans ce dépôt.
-- Vérifier la base légale et l'information donnée aux répondants avant tout traitement par un LLM hébergé. Plusieurs répondants expriment eux-mêmes des réserves sur la confidentialité des outils en ligne : un modèle local, ou un service couvert par un accord de traitement de données, est cohérent avec ce qu'ils ont déclaré.
+- **Traitement déjà réalisé, à régulariser.** Les chiffres descriptifs de la section 3 ont été calculés sur l'export dans une session Claude Code hébergée, donc par un LLM hébergé, avant que ce point soit vérifié. L'équipe DoctorIA doit confirmer que ce traitement est couvert par la base légale et par l'information donnée aux répondants, ou décider des suites (information des répondants, suppression des copies de travail). Aucun autre traitement de ce type tant que ce n'est pas tranché.
+- Le seuil de diffusion vaut aussi pour ce document, versionné dans un dépôt public : il ne décrit aucune ligne individuelle, et la mention du périmètre géographique (section 4) est à valider par l'équipe avant fusion.
+- Vérifier la base légale et l'information donnée aux répondants avant tout nouveau traitement par un LLM hébergé. Plusieurs répondants expriment eux-mêmes des réserves sur la confidentialité des outils en ligne : un modèle local, ou un service couvert par un accord de traitement de données, est cohérent avec ce qu'ils ont déclaré.
 
 ### 5.2 Étape 1 : préparation des données
 
 1. Exclure les lignes de test (ids 3, 4, 5) et documenter la règle.
 2. Harmoniser les clés des grilles vers un jeu de codes unique (table de correspondance libellé français vers code, à versionner).
 3. Créer `version_questionnaire` (libellés ou codes), `vague` (juillet, septembre, autre) et `langue`.
-4. Séparer modalités fermées et réponses « Autre » dans les multi-réponses. Les « Autre » passent à l'étape 5.7.
-5. Regrouper `q2_discipline` en domaines. Proposition, proche des regroupements d'Anthropic : sciences formelles (sections 25 à 27, 61), sciences physiques et ingénierie (28 à 37, 60, 62, 63), sciences de la vie et santé (64 à 69, 74, 85 à 87), sciences sociales (01 à 06, 16, 19, 23, 24, 70, 71), arts et humanités (07 à 15, 17, 18, 21, 22). À valider par l'équipe.
-6. Construire les variables dérivées : ancienneté en thèse (2026 moins `q4`), score de littératie (`q8`, après vérification de la cohérence interne par alpha de Cronbach ou oméga), nombre de tâches utilisées, nombre d'outils utilisés.
+4. Séparer modalités fermées et réponses « Autre » dans les multi-réponses. Les « Autre » passent à l'étape 6 (section 5.7).
+5. Regrouper `q2_discipline` en domaines. Proposition, proche des regroupements d'Anthropic : sciences formelles (sections 25 à 27, 61), sciences physiques et ingénierie (28 à 37, 60, 62, 63), sciences de la vie et santé (42 à 58, 64 à 69, 74, 85 à 87, 90 à 92), sciences sociales (01 à 06, 16, 19, 20, 23, 24, 70, 71), arts et humanités (07 à 15, 17, 18, 21, 22, 72, 73, 76, 77). Toute modalité de l'export absente de cette liste est affectée explicitement et consignée dans le journal des décisions. À valider par l'équipe.
+6. Construire les variables dérivées : ancienneté en thèse (en années universitaires, calculée à partir de `q4` et de la date de réponse, car la collecte chevauche les années 2025-2026 et 2026-2027), score de littératie (`q8`, après vérification de la cohérence interne par alpha de Cronbach ou oméga), nombre de tâches utilisées, nombre d'outils utilisés.
 7. Produire un dictionnaire de données et un journal des décisions.
 
 ### 5.3 Étape 2 : représentativité et pondération
@@ -189,7 +191,7 @@ Un contrôle utile, absent chez Anthropic : comparer le score de capacité théo
 
 ### 5.8 Étape 7 : vérification, données et cadre institutionnel (volet propre à DoctorIA)
 
-- Vérification : distribution de `q18` et `q19`, types de vérification par domaine. Plus de 9 utilisateurs sur 10 déclarent vérifier « toujours » ou « le plus souvent », ce qui appelle une réserve de désirabilité sociale. Croiser avec `q8_limites` et avec le risque « erreurs ou hallucinations ».
+- Vérification : distribution de `q18` et `q19`, types de vérification par domaine. Dans l'export, plus de 9 utilisateurs sur 10 déclarent vérifier « toujours » ou « le plus souvent » (ordre de grandeur provisoire, non pondéré, chiffre exact à reporter en section 3.3 après harmonisation), ce qui appelle une réserve de désirabilité sociale. Croiser avec `q8_limites` et avec le risque « erreurs ou hallucinations ».
 - Données sensibles : `q20` par domaine et par école doctorale, croisé avec `q13` (demande d'accès sécurisé) et `q16` (outils locaux).
 - Cadre : `q24`, `q25`, `q26` par école doctorale. Tester si un cadre connu ou une discussion en comité de suivi est associé à l'intensité d'usage et aux pratiques de vérification.
 - Non-utilisateurs (41) : motifs `q12bis`, profil, attentes de formation. Effectif trop faible pour des croisements fins.
@@ -233,7 +235,7 @@ L'étude Anthropic mesure où l'IA est utilisée. Le cadre des 4D décrit ce que
 4. **Modalités.** Rapprocher les rôles de `q17` et les 5 paliers d'Anthropic des trois modalités : assistif et partagé relèvent de l'Augmentation, délégué de l'Automation, autonome de l'Agency. Correspondance approximative, à présenter comme telle.
 5. **Grille de codage des verbatims.** Utiliser les 4 compétences et leurs 12 sous-catégories comme taxonomie fermée pour l'étape 6, à côté de la grille thématique inductive.
 6. **Besoins de formation.** Classer les thèmes de `q28_themes` par compétence (Outils vers Delegation, Prompt vers Description, Intégrité et Données vers Diligence) pour formuler les recommandations dans un vocabulaire partagé.
-7. **Module complémentaire.** Ajouter 3 ou 4 items sur Description (formulation de la demande, itération, consignes durables), seule compétence non couverte.
+7. **Module complémentaire.** Ajouter 3 items sur Description (formulation de la demande, itération, consignes durables), seule compétence non couverte. Ils figurent dans le module de la section 7.
 8. **Déclaration de diligence.** Joindre au rapport une déclaration d'usage de l'IA sur le modèle de celle qui clôt le document de Dakan et Feller, puisque l'analyse elle-même mobilise un LLM.
 
 **Réserves.**
@@ -244,27 +246,28 @@ L'étude Anthropic mesure où l'IA est utilisée. Le cadre des 4D décrit ce que
 - La modalité Agency est presque absente du questionnaire.
 - La licence interdit de diffuser une version modifiée du cadre. Le citer et s'y référer, sans en republier une adaptation.
 
-## 6. Hypothèses confirmatoires
+## 6. Hypothèses
 
-Tirées des résultats d'Anthropic, formulées pour la population DoctorIA.
+Tirées des résultats d'Anthropic, formulées pour la population DoctorIA. H1, H3, H4 et H6 sont confirmatoires. H2 ne le devient que si le module complémentaire (section 7) fournit les parts de temps. H5 est exploratoire.
 
-- **H1.** L'intensité d'usage est plus élevée en sciences formelles qu'en sciences de la vie et santé et en sciences physiques de laboratoire.
-- **H2.** Les tâches d'écriture et de traitement de données ont une part d'intensité supérieure à leur part de temps ; le recueil de données et l'idéation ont une part inférieure.
+- **H1.** L'intensité d'usage est plus élevée en sciences formelles qu'en sciences de la vie et santé et qu'en sciences physiques et ingénierie (domaines définis en section 5.2).
+- **H2 (conditionnelle).** Les tâches d'écriture et de traitement de données ont une part d'intensité supérieure à leur part de temps ; le recueil de données et l'idéation ont une part inférieure. Le dénominateur (part de temps) n'existe pas dans l'export : sans le module complémentaire, H2 est traitée en exploratoire, par comparaison qualitative (section 5.5).
 - **H3.** L'intensité d'usage d'une tâche croît avec son score de capacité théorique.
 - **H4.** L'intensité est plus faible pour les tâches à composante physique, interpersonnelle ou soumises à des contraintes réglementaires.
-- **H5.** Les domaines dont les tâches ont un score de capacité moyen plus élevé déclarent des rôles plus délégués (`q17`).
+- **H5 (exploratoire).** Les domaines dont les tâches ont un score de capacité moyen plus élevé déclarent des rôles plus délégués (`q17`). Avec 5 domaines, donc 5 points, aucun test n'est possible : description seulement.
 - **H6.** Les utilisateurs d'outils spécialisés (`q16` : bibliographie, codage, local) déclarent une intensité plus élevée sur les tâches d'idéation et d'analyse que les utilisateurs des seuls agents généralistes.
 
-Chaque hypothèse est assortie d'un test, d'une taille d'effet et d'un seuil fixés avant analyse.
+Chaque hypothèse confirmatoire est assortie d'un test, d'une taille d'effet et d'un seuil fixés avant analyse.
 
 ## 7. Module complémentaire recommandé
 
-Quatre questions suffiraient à combler les écarts de la section 4. Elles reprennent le format de l'enquête d'Anthropic, ce qui rend la comparaison directe.
+Quatre questions suffiraient à combler les écarts de la section 4. Elles reprennent le format de l'enquête d'Anthropic, ce qui rend la comparaison directe. Un cinquième bloc couvre la compétence Description (section 5.11).
 
 1. Répartition du temps de thèse sur les 6 étapes de `q14` (100 points à répartir).
 2. Importance de chaque étape pour la qualité de la thèse (100 points à répartir).
 3. Niveau d'usage de l'IA par étape, sur les 5 paliers d'Anthropic : aucun, assistif, partagé, délégué, autonome.
-4. Horizon auquel l'IA pourrait réaliser seule chaque étape au niveau d'un bon chercheur du domaine (déjà le cas, d'ici 2027, 2030, 2035, plus tard, jamais).
+4. Horizon auquel l'IA pourrait réaliser seule chaque étape au niveau d'un bon chercheur du domaine (déjà le cas, d'ici 2027, 2030, 2035, plus tard, jamais). Il s'agit d'une collecte nouvelle : le bloc J reste non transposable à partir de l'export actuel (section 5.9).
+5. Trois items sur Description : formulation de la demande, itération sur les réponses, consignes durables (même échelle de fréquence que `q15`).
 
 À ajouter aussi : le genre et la tranche d'âge, prévus dans le questionnaire mais vides dans l'export.
 
