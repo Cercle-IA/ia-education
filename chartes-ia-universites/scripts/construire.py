@@ -11,7 +11,11 @@ ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "scripts" / "donnees.txt"
 CATS = {"U": "Université", "A": "Autre établissement ESR", "N": "Cadre national"}
 COLS = ["ID", "Catégorie", "Etablissement", "Entité émettrice", "Titre", "Type",
-        "Public", "Doctorat", "Date", "URL page", "URL PDF", "Vérification", "Note"]
+        "Public", "Doctorat", "Date", "URL page", "URL PDF", "Vérification", "Note",
+        "Fichier", "Téléchargement"]
+JOURNAL = ROOT / "documents" / "_journal.csv"
+# Téléchargés mais sans le document attendu (page de connexion, lien invalide)
+NON_PROBANT = {"U082", "U084"}
 
 SOURCES = [
     ("Panorama des chartes sur l'utilisation de l'IA", "Observatoire IA formation, Aix-Marseille Université",
@@ -37,22 +41,39 @@ LEGENDE = [
     ("Doctorat = oui", "Document propre au doctorat (école doctorale, collège doctoral, charte du doctorat, support pour doctorants)."),
     ("Doctorat = partiel", "Document général avec un volet recherche ou doctorat, ou relayé par une école doctorale."),
     ("Doctorat = à confirmer", "Présence d'un volet doctoral non vérifiée."),
-    ("Vérification = Extrait", "Titre, URL et date vus dans les résultats d'un moteur de recherche. Le document n'a pas été ouvert (sites universitaires inaccessibles depuis l'environnement de travail)."),
+    ("Vérification = Document lu", "Document téléchargé et lu : titre, date et passage sur l'IA contrôlés dans le fichier."),
+    ("Vérification = Extrait", "Titre, URL et date vus dans les résultats d'un moteur de recherche. Le téléchargement a échoué (lien mort, serveur indisponible ou certificat invalide) : le document n'a pas été lu."),
     ("Vérification = Cité", "Document mentionné par une source secondaire ; URL du document non trouvée ou non confirmée."),
     ("Date", "AAAA-MM quand connue. n.d. = non datée. Une date tirée du dossier de mise en ligne peut différer de la date d'adoption."),
 ]
 
 
+def journal():
+    if not JOURNAL.exists():
+        return {}
+    return {r["ID"]: r for r in csv.DictReader(JOURNAL.open(encoding="utf-8"))}
+
+
 def load():
-    rows, n = [], {"U": 0, "A": 0, "N": 0}
+    rows, jr = [], journal()
     for line in SRC.read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
         f = [x.strip() for x in line.split(" | ")]
-        assert len(f) == 12, (len(f), line[:80])
-        cat = f[0]
-        n[cat] += 1
-        rows.append([f"{cat}{n[cat]:03d}", CATS[cat]] + f[1:])
+        assert len(f) == 13, (len(f), line[:80])
+        rid, cat = f[0], f[1]
+        j = jr.get(rid)
+        fichier, statut, verif = "", "non tenté", f[11]
+        if rid in NON_PROBANT:
+            statut = "contenu non probant (accès restreint ou lien invalide)"
+        elif j and j["Statut"] in ("200", "déjà présent"):
+            fichier = "documents/" + j["Fichier"]
+            statut = "téléchargé"
+            if verif != "Cité":
+                verif = "Document lu"
+        elif j:
+            statut = "échec : " + j["Fichier"][:80]
+        rows.append([rid, CATS[cat]] + f[2:11] + [verif, f[12], fichier, statut])
     return rows
 
 
@@ -89,7 +110,7 @@ def sheet(wb, title, header, rows, widths):
 def write_xlsx(rows):
     wb = Workbook()
     wb.remove(wb.active)
-    widths = [7, 14, 28, 26, 50, 16, 18, 11, 9, 40, 40, 11, 55]
+    widths = [7, 14, 28, 26, 50, 16, 18, 11, 9, 40, 40, 13, 55, 40, 30]
     sheet(wb, "Tous les documents", COLS, rows, widths)
     sheet(wb, "Doctorat", COLS, [r for r in rows if r[7] in ("oui", "partiel")], widths)
     sheet(wb, "Universités", COLS, [r for r in rows if r[0].startswith("U")], widths)
@@ -105,6 +126,8 @@ def md_table(rows):
     for r in rows:
         link = r[10] or r[9]
         lien = f"[PDF]({link})" if r[10] else (f"[Page]({link})" if link else "")
+        if r[13]:
+            lien += f" · [copie]({r[13]})"
         cells = [r[0], r[2], r[3], r[4], r[5], r[7], r[8], lien, r[11]]
         out.append("| " + " | ".join(c.replace("|", "/") for c in cells) + " |")
     return "\n".join(out)
@@ -123,6 +146,10 @@ def write_md(rows):
         f"{sum(r[0].startswith('N') for r in rows)} cadres nationaux. "
         f"{sum(r[7] == 'oui' for r in rows)} documents sont propres au doctorat, "
         f"{sum(r[7] == 'partiel' for r in rows)} le couvrent en partie.",
+        "",
+        f"{sum(r[14] == 'téléchargé' for r in rows)} documents téléchargés dans `documents/` "
+        f"et lus ; {sum(r[14].startswith('échec') for r in rows)} téléchargements en échec "
+        "(liens morts, serveurs indisponibles, certificats invalides).",
         "",
         "Fichiers : `recensement.csv` et `recensement.xlsx` (onglets Doctorat, Universités, "
         "Cadres nationaux, Sources, Légende). Les colonnes complètes (public, URL page et PDF, note) "

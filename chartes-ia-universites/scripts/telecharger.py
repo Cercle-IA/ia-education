@@ -22,7 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 CSV_PATH = ROOT / "recensement.csv"
 OUT = ROOT / "documents"
-UA = "Mozilla/5.0 (X11; Linux x86_64) recensement-chartes-ia/1.0"
+UA = ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) "
+      "Chrome/124.0 Safari/537.36")
 
 
 def slug(text, n=40):
@@ -30,10 +31,16 @@ def slug(text, n=40):
     return re.sub(r"[^A-Za-z0-9]+", "-", t).strip("-").lower()[:n]
 
 
-def fetch(url):
-    req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=60) as r:
-        return r.status, r.headers.get("Content-Type", ""), r.read()
+def fetch(url, essais=2):
+    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+    for k in range(essais):
+        try:
+            with urllib.request.urlopen(req, timeout=90) as r:
+                return r.status, r.headers.get("Content-Type", ""), r.read()
+        except Exception:  # noqa: BLE001
+            if k == essais - 1:
+                raise
+            time.sleep(5)
 
 
 def main():
@@ -41,11 +48,24 @@ def main():
     OUT.mkdir(exist_ok=True)
     rows = list(csv.DictReader(CSV_PATH.open(encoding="utf-8")))
     log = []
+    existants = {p.name.split("_")[0]: p.name for p in OUT.iterdir()
+                 if p.is_file() and not p.name.startswith("_")}
+    ancien = {}
+    if (OUT / "_journal.csv").exists():
+        for r in csv.reader((OUT / "_journal.csv").open(encoding="utf-8")):
+            ancien[r[0]] = r
     for row in rows:
         if only_doc and row["Doctorat"].lower() not in ("oui", "partiel"):
             continue
         url = row["URL PDF"].strip() or row["URL page"].strip()
         if not url:
+            continue
+        if row["ID"] in existants:
+            old = ancien.get(row["ID"])
+            if old and old[2] == "200" and old[6] == existants[row["ID"]]:
+                log.append(old)
+            else:
+                log.append([row["ID"], url, "déjà présent", "", 0, "", existants[row["ID"]]])
             continue
         try:
             status, ctype, data = fetch(url)

@@ -39,15 +39,20 @@ jobs:
           mkdir -p _texte
           for f in *.pdf; do
             [ -e "$f" ] || continue
+            [ -e "_texte/${f%.pdf}.txt" ] && continue
             pdftotext -f 1 -l 2 -layout "$f" "_texte/${f%.pdf}.txt" || echo "échec extraction $f"
             pdfinfo "$f" > "_texte/${f%.pdf}.info" 2>/dev/null || true
           done
+
+      - name: Mettre à jour les tableaux
+        working-directory: chartes-ia-universites
+        run: pip install -q openpyxl && python3 scripts/construire.py
 
       - name: Commiter les documents
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add chartes-ia-universites/documents
+          git add chartes-ia-universites
           git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
           git commit -m "Télécharge les chartes IA référencées (workflow)"
           git push
