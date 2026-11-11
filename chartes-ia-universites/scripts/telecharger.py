@@ -43,6 +43,33 @@ def fetch(url, essais=2):
             time.sleep(5)
 
 
+def archive(url):
+    """Copie archivée par l'Internet Archive, avec pause et reprise en cas de refus."""
+    import json
+    import urllib.parse
+    api = "https://archive.org/wayback/available?url=" + urllib.parse.quote(url, safe="")
+    for attente in (0, 60, 120, 180):
+        time.sleep(attente or 15)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(api, headers={"User-Agent": UA}),
+                                        timeout=60) as r:
+                snap = json.load(r).get("archived_snapshots", {}).get("closest")
+            if not snap or not snap.get("available"):
+                raise FileNotFoundError("aucune copie archivée")
+            ts = snap["timestamp"]
+            source = f"https://web.archive.org/web/{ts}id_/{url}"
+            time.sleep(15)
+            status, ctype, data = fetch(source, essais=1)
+            return source, status, ctype, data
+        except FileNotFoundError:
+            raise
+        except Exception as e:  # noqa: BLE001
+            if attente == 180:
+                raise
+            if "429" not in str(e) and "refused" not in str(e) and "timed out" not in str(e):
+                raise
+
+
 def main():
     only_doc = "--doctorat" in sys.argv
     OUT.mkdir(exist_ok=True)
@@ -71,10 +98,12 @@ def main():
         try:
             try:
                 status, ctype, data = fetch(url)
-            except Exception:  # noqa: BLE001
+            except Exception as e1:  # noqa: BLE001
                 # Repli : copie archivée par l'Internet Archive (Wayback Machine)
-                source = "https://web.archive.org/web/2026id_/" + url
-                status, ctype, data = fetch(source)
+                try:
+                    source, status, ctype, data = archive(url)
+                except Exception as e2:  # noqa: BLE001
+                    raise RuntimeError(f"{e1} ; archive : {e2}") from e2
             ext = "pdf" if ("pdf" in ctype or data[:4] == b"%PDF") else (
                 "docx" if "word" in ctype else "html")
             name = f'{row["ID"]}_{slug(row["Etablissement"])}.{ext}'

@@ -18,7 +18,7 @@ concurrency:
 jobs:
   telecharger:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
 
@@ -55,4 +55,4 @@ jobs:
           git add chartes-ia-universites
           git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
           git commit -m "Télécharge les chartes IA référencées (workflow)"
-          git push
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push
