@@ -67,13 +67,19 @@ def main():
             else:
                 log.append([row["ID"], url, "déjà présent", "", 0, "", existants[row["ID"]]])
             continue
+        source = url
         try:
-            status, ctype, data = fetch(url)
+            try:
+                status, ctype, data = fetch(url)
+            except Exception:  # noqa: BLE001
+                # Repli : copie archivée par l'Internet Archive (Wayback Machine)
+                source = "https://web.archive.org/web/2026id_/" + url
+                status, ctype, data = fetch(source)
             ext = "pdf" if ("pdf" in ctype or data[:4] == b"%PDF") else (
                 "docx" if "word" in ctype else "html")
             name = f'{row["ID"]}_{slug(row["Etablissement"])}.{ext}'
             (OUT / name).write_bytes(data)
-            log.append([row["ID"], url, status, ext, len(data),
+            log.append([row["ID"], source, status, ext, len(data),
                         hashlib.sha256(data).hexdigest(), name])
             print(f'OK  {row["ID"]} {name} ({len(data)//1024} Ko)')
         except Exception as e:  # noqa: BLE001
