@@ -1,0 +1,103 @@
+      Charte d’utilisation de l’intelligence artificielle générative
+    par les étudiants et étudiantes au sein de l’UFR SHS d’UPCité
+
+L’UFR SHS d’UPCité propose des formations au sein de trois départements que sont les
+Sciences du langage, les Sciences de l’éducation et de la formation et les Sciences sociales.
+La présente charte a pour vocation d’encadrer les utilisations des systèmes d’intelligences
+artificielles (IA) et d’intelligences artificielles génératives (IAg) par les étudiants et étudiantes
+de l’UFR SHS d’UPCité. Elle vise également à clarifier certaines notions.
+Cette charte s’inscrit dans un ensemble de lois régissant l’action de la France et de l’Union
+européenne.
+
+1    Principe général
+L’encadrement des utilisations des systèmes d’intelligence artificielles (IA) et d’intelligence
+artificielle générative (IAg) par les étudiants et étudiantes de l’UFR SHS d’UPCité cible
+particulièrement les devoirs et travaux à rendre, qu’ils soient notés ou pas : épreuves
+écrites terminales, épreuves écrites de rattrapage ou de deuxième session, devoirs en temps
+limités en salle de classe, devoir réalisé en dehors de l’établissement, activités d’une séance,
+activités à distance, etc.
+Cet encadrement postule que tout enseignant et toute enseignante de l’UFR SHS d’UPCité a la
+responsabilité pédagogique du devoir et des travaux qu'il ou elle donne. C’est donc chaque
+enseignant et chaque enseignante qui précise sur le texte des devoirs et des travaux à rendre, les
+documents ou matériels autorisés (dictionnaire, calculatrice, codes, internet, logiciels, IA,
+IAg...) ainsi que toutes les modalités concernant ces devoirs et ces travaux à rendre. Sans
+indication, aucun matériel ou document n'est autorisé. C’est donc également valable pour
+toute utilisation des systèmes faisant intervenir des Intelligences Artificielles (IA) ou
+Intelligences Artificielles génératives (IAg).
+
+2    Recommandations de l’équipe enseignante
+2.1 Une attention au plagiat
+Le plagiat consiste à laisser penser que la production d’un auteur est sa propre production (texte,
+graphique, image, idée, etc.). Le plagiat constitue un délit1 ; une faute très grave, elle est
+lourdement sanctionnée.
+Pour éviter le plagiat, il faut toujours citer ses sources, rechercher les sources originelles.
+Lorsque c’est le texte d’un auteur, on cite le texte entre guillemets. Lorsque c’est une idée qui
+est reprise, reformulée ou résumée, on cite l’auteur en indiquant où l’idée a été exprimée
+(article, ouvrage, conférence, etc.).
+Des normes existent pour organiser et présenter les sources2.
+2.2 Une attention à l’utilisation des IA et IAg
+L’utilisation de systèmes faisant intervenir des Intelligences Artificielles (IA) ou Intelligences
+Artificielles génératives (IAg) rend très difficile, voire impossible, le contrôle de l’information
+récupérée et l’identification des auteurs à l’origine des idées développées générées.
+Sans contrôle rigoureux et systématique, l’utilisation des Intelligences Artificielles (IA) ou des
+Intelligences Artificielles génératives (IAg) peut conduire à commettre des erreurs : écrire des
+
+1
+  Le plagiat, un délit https://www.enseignementsup-recherche.gouv.fr/fr/periode-d-examen-attention-plagiat-
+48655
+2
+  Ordre des éléments Normes ISO 690 https://fr.wikipedia.org/wiki/ISO_690
+
+
+                                              Page 1 sur 7
+contresens, inclure des travaux d’auteurs qui n’existent pas, des informations obsolètes ou
+erronées.
+Dans la construction des devoirs et travaux, si des systèmes faisant intervenir des Intelligences
+Artificielles (IA) ou Intelligences Artificielles génératives (IAg) sont utilisés, il devient très
+difficile, voire impossible, d’éviter le plagiat.
+L’équipe enseignante recommande donc aux étudiants et étudiantes de structurer et d’écrire
+eux-mêmes les devoirs et travaux à rendre aux enseignant·es, ce, quels que soient ces devoirs
+et travaux (activités courtes, fiches de lectures, travaux de groupes, mémoires, travaux encadrés,
+etc.) en s’appuyant essentiellement sur des lectures ou visionnages dont les auteurs sont
+clairement identifiés et que chaque étudiant et chaque étudiante peut facilement citer afin
+d’éviter tout plagiat, toute ambiguïté et toute sanction associée.
+En cas de difficulté, chaque étudiant et chaque étudiante peut contacter l’enseignant référent ou
+l’enseignante référente du devoir ou du travail à rendre.
+2.3 Une attention à la transparence
+Toute utilisation de systèmes d’IA et d’IAg doit conduire à exposer la méthodologie de travail
+dans son devoir ou dans le travail à rendre.
+Des précisions pourront être demandées par les enseignants et enseignantes dans un but réflexif,
+conduisant l’étudiant ou l’étudiante à comprendre le fonctionnement de systèmes d’IA et d’IAg
+et leurs limites ainsi que les règles à respecter pour une utilisation respectueuse de cette charte.
+2.4 Une attention à la responsabilité individuelle
+Chaque étudiant et chaque étudiante reste pleinement responsable des contenus des devoirs et
+travaux remis aux enseignants et enseignantes. Il en garantit leur fondement et leur légitimité.
+
+3   Autres recommandations
+3.1 Développer ses connaissances et compétences
+Faire appel à son esprit critique est indispensable pour l’utilisation de tout système d’IA et
+d’IAg afin qu’elle soit raisonnée, réfléchie et extrêmement rigoureuse en termes de procédures
+de vérifications des sources et des contenus ainsi qu’en termes de formulations des requêtes et
+utilisations et reformulations de tout type de textes provenant des réponses des systèmes
+machines.
+L’objectif est que chaque étudiant et chaque étudiante soit un apprenant actif ou une apprenante
+active sans compromettre ni l’intégrité académique ni son autonomie intellectuelle.
+3.2 Développer sa conscience des risques de manipulation des systèmes d’IA et
+    d’IAg sur la pensée humaine
+Chaque étudiant et chaque étudiante doit veiller à développer sa propre pensée, son propre
+raisonnement. Chacun et chacune doit prendre conscience des risques de manipulation des
+systèmes d’IA et d’IAg sur la pensée humaine.
+Chacun et chacune doit comprendre en quoi et pourquoi les systèmes d’IA et d’IAg ne sont ni
+neutres, ni équitables, ni loyaux. Les biais peuvent engendrer des réponses à caractère raciste,
+sexiste, culturel, générationnel, social ou autres. Les biais peuvent être produits de façon
+consciente par des humains et aussi de façon inconsciente et non maîtrisée par les machines et
+les humains.
+    − Les générations des textes, images, etc. sont issues de processus multiples et successifs
+        dans lesquels des humains interviennent à plusieurs étapes intermédiaires pour orienter
+        les réponses que ces machines produisent.
+
+
+
+
+                                           Page 2 sur 7
+

@@ -1,0 +1,90 @@
+Charte pour l'Usage de l'Intelligence
+Artificielle à l’Université catholique de l’ouest
+PRÉAMBULE
+L’intelligence artificielle (IA), et plus particulièrement l’intelligence artificielle générative (IAG) est devenue
+un outil incontournable dans nos sociétés et transforme en profondeur les pratiques pédagogiques,
+académiques et administratives de l’enseignement supérieur.
+La présente charte définit un cadre d’usage responsable, critique et transparent de l’IA au sein de l'Université
+catholique de l’ouest (UCO), en cohérence avec son projet éducatif et académique, fondé sur le
+développement de l’autonomie et de la responsabilité et ayant conscience des sujets sociaux et
+environnementaux contemporains.
+Consciente des opportunités offertes par ces outils d’IA mais également des enjeux qu’ils soulèvent, l’UCO
+accompagne leurs usages. Plutôt que d’interdire, elle promeut une liberté raisonnée et éclairée, basée sur la
+responsabilité de chacun des acteurs de la communauté universitaire.
+
+TITRE I : PRINCIPES GÉNÉRAUX
+Article 1 : Définition et champ d'application
+L’intelligence artificielle générative (IAG) recouvre un ensemble d’outils susceptibles d’intervenir dans de
+nombreux contextes universitaires. Le présent article définit ce que recouvre la notion « d’outil d’IAG » et
+délimite les situations, les publics et les productions concernés par la présente charte.
+1.1. L’expression “outil d’IAG” fait référence à un logiciel d’intelligence artificielle générative.
+1.2. L'intelligence artificielle générative fait référence à l'utilisation de l'IAG pour créer de contenus (texte,
+images, son, vidéo, ou toute autre production) à partir de données qui lui sont transmises par un utilisateur.
+1.3. La présente charte s'applique à l'ensemble de la communauté universitaire de l’UCO : étudiants,
+enseignants, enseignants-chercheurs, personnels administratifs et autres intervenants.
+1.4. Elle concerne tous les travaux universitaires, qu'ils soient individuels ou collectifs, écrits ou oraux, et
+quels que soient leur format ou leur finalité.
+
+Article 2 : Principes fondamentaux
+Les principes suivants établissent le socle commun guidant l’usage de l’IA au sein de l’Université catholique
+de l’Ouest.
+2.1. Transparence : L’usage d’un outil d’IA est explicitement mentionné et documenté au plan académique,
+dans le respect de la présente charte.
+2.2. Intégrité scientifique et académique : L’utilisation de l’IA respecte le principe d’intégrité et ne se
+substitue pas au travail intellectuel personnel requis dans le cadre universitaire.
+2.3. Usage critique : L’utilisation de l’IA s’accompagne d’une démarche critique portant sur la fiabilité des
+contenus générés.
+2.4. Responsabilité : Chaque membre de la communauté universitaire de l’UCO reste juridiquement
+responsable de l’usage qu’il fait d’un outil d’IA et du contenu produit avec son assistance, notamment en cas
+de violation d’obligations légales, réglementaires ou de la présente charte.
+                             Charte pour l'Usage de l'Intelligence Artificielle à l’Université catholique de
+                             l’ouest                                                                            11 09 2025
+
+
+
+2.5. Sobriété numérique : La communauté universitaire est invitée à adopter un usage raisonné de l’IA,
+consciente de son impact social et environnemental.
+
+TITRE II : DISPOSITIONS APPLICABLES AUX ÉTUDIANTS
+La formation universitaire repose sur l’implication personnelle des étudiants dans leurs apprentissages et sur
+la réalisation de travaux qui contribuent au développement de leurs connaissances, compétences et esprit
+critique. L’usage de l’IA ne peut en aucun cas se substituer à cet effort individuel, qui demeure indispensable
+à la progression académique, scientifique et professionnelle.
+Les présentes règles visent ainsi à responsabiliser l’usage de l’IA par les étudiants, dans le cadre défini par
+des enseignants libres de leurs approches pédagogiques, en adéquation avec les besoins de chaque
+formation et dans le but de former des esprits libres et universels, capables d’un agir éthique.
+
+Article 3 : Usages prohibés de l'IA
+Il est attendu de la part des étudiants de :
+3.1. Suivre les consignes d’utilisation d’IA données par l’enseignant, notamment dans le cadre de l’évaluation
+3.2. Ne pas s'approprier et présenter comme leur travail personnel un contenu généré par un outil d’IA.
+3.3 Ne pas utiliser un outil d’IA pour produire la totalité ou une partie substantielle d'un travail universitaire
+sans le mentionner.
+3.4. Ne pas utiliser un outil d’IA pour falsifier des données ou créer de fausses références bibliographiques.
+3.5. Ne pas utiliser un outil d'IA pour créer tout contenu pouvant nuire à la réputation des personnes ou de
+l'UCO, porter atteinte à la vie privée ou porter atteinte à la propriété intellectuelle d’un tiers.
+3.6. Ne pas soumettre à l'IA sans autorisation ad hoc ou en violation des règles légales et réglementaires des
+données personnelles ou relevant de la vie privée d’un tiers, des données confidentielles ou des documents
+internes à l'UCO, des données relevant de la propriété intellectuelle d’un tiers, des contenus des
+enseignements, etc., notamment celles obtenues dans le cadre d’un travail de recherche universitaire
+(enquêtes qualitatives, entretiens, etc.).
+
+Article 4 : Obligations déclaratives
+4.1 Tout usage d’un outil d’IA dans un travail universitaire fait l’objet d’une mention explicite. À défaut,
+l’usage est présumé prohibé.
+4.2 Cette mention doit préciser :
+     •       L’outil d'IA utilisé
+     •       La nature de l'utilisation (production complète, aide à la rédaction, traduction, etc.)
+     •       Les étapes du travail où l'IA a été utilisée (recherche, planification, rédaction, etc.)
+
+
+Article 5 : Poursuites et sanctions en cas de manquement
+5.1. Tout manquement aux règles et principes définis dans la présente charte constitue un non-respect du
+règlement intérieur et expose l'étudiant à des sanctions.
+10.1.
+
+
+
+
+                                                                                                               2 sur 2
+

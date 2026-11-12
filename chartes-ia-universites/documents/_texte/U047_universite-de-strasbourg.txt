@@ -1,0 +1,86 @@
+CHARTE DE BON USAGE
+DES MOYENS NUMÉRIQUES
+DE L’UNIVERSITÉ
+
+
+                                                              Lignes directrices sur l’usage
+                                                              des intelligences artificielles
+
+
+
+
+  Valérie GIBERT
+  Directrice générale des services
+
+
+
+
+  Affaire suivie par
+  Guy BRAND
+  Responsable de la sécurité
+  des systèmes d’information
+  Tél. : +33 (0)3 68 85 06 88
+  rssi@unistra.fr
+
+
+
+
+   LIGNES DIRECTRICES SUR L’USAGE DES IAs V2025.05 (23/05/2025)     1/3
+Préambule
+
+          Les outils d'intelligence artificielle (« IA »), et particulièrement les IAs génératives, offrent de nombreuses
+          possibilités et de nombreux cas d'usage innovants à la communauté universitaire.
+          Malgré leur caractère disruptif, il convient de garder à l'esprit que ces IA restent des dispositifs numériques
+          et sont par conséquent soumis au même cadre d'emploi et aux mêmes règles de vigilance que des outils
+          informatiques classiques.
+
+          Les outils d'intelligence artificielle ne sauraient donc être utilisés autrement que de façon raisonnée et
+          maîtrisée, dans le respect des grands principes suivants :
+
+          RÉFLEXION PRÉALABLE : l'utilisation de ces outils doit s'inscrire dans une démarche raisonnée, conduite dans
+          le respect de l'éthique scientifique et personnelle, répondant aux enjeux d'intégrité académique et de
+          préservation des ressources.
+
+          TRANSPARENCE : l'usage de l'IA dans une production doit être documenté et traçable.
+
+          RESPONSABILITÉ : l'utilisateur demeure responsable des contenus qu'il produit au moyen des outils d'IA, dont
+          l'usage doit demeurer conforme à la réglementation applicable, notamment en matière :
+                de discrétion professionnelle,
+                de protection des données à caractère personnel,
+                de respect de la propriété intellectuelle.
+
+          Appliquées aux IA génératives, ces conditions d'utilisation responsable se déclinent comme suit :
+
+1. Sécurité du système d’information
+
+          Nombre d’informations et de données ne doivent en aucun cas être transmises à des IAs hébergées hors de
+          l’université1 pour lesquelles la confidentialité ne peut être systématiquement garantie. Il ne faut jamais leur
+          transmettre de données personnelles, ni de documents professionnels et a fortiori de documents
+          confidentiels.
+
+          Seules des données relevant du domaine public, ou dont l'usager est propriétaire, peuvent être
+          communiquées.
+
+2. Protection des données à caractère personnel
+
+          Le RGPD (Règlement Général pour la Protection des Données) s’applique aux traitements de données à
+          caractère personnel mobilisant des outils d'IA.
+
+          À ce titre, il convient de prendre garde au dépôt de documents contenant des données personnelles, à la
+          saisie directe de ces données menant à la divulgation ou la révélation d’informations préjudiciables à
+          l’encontre de soi-même ou d’autres personnes et de se prémunir d’une éventuelle fuite de données
+          personnelles dans ces outils. Une vigilance particulière doit être portée vis-à-vis de ceux qui ne
+          respecteraient pas la réglementation (outils non proposés par l’université ou hors-Europe ou commerciaux
+          ou non libres).
+
+
+
+
+          1
+           En cas d'absence d'outil IA fourni par l'université ou proposé par des acteurs publics, vous pouvez utiliser
+          des outils « tout public », tant que ces derniers respectent les conditions énumérées dans le présent
+          document.
+
+
+LIGNES DIRECTRICES SUR L’USAGE DES IAs V2025.05 (23/05/2025)                   2/3
+
