@@ -2,13 +2,13 @@
 
 État au 11 novembre 2026. Dépôt de référence (recensement, documents et synthèse) : https://github.com/tarikhennen/doctorIA-article
 
-Synthèse établie à partir du recensement de ce dossier (`recensement.csv`, 143 documents) et de la lecture des textes téléchargés dans `documents/`. Chaque affirmation renvoie à sa source ; les identifiants ([U008](documents/U008_universite-paris-1-pantheon-sorbonne.pdf), [U033](documents/U033_universite-psl.pdf)…) correspondent aux lignes du tableau.
+Synthèse établie à partir du recensement de ce dossier (`recensement.csv`, 150 documents) et de la lecture des textes téléchargés dans `documents/`. Chaque affirmation renvoie à sa source ; les identifiants ([U008](documents/U008_universite-paris-1-pantheon-sorbonne.pdf), [U033](documents/U033_universite-psl.pdf)…) correspondent aux lignes du tableau.
 
 ## En bref
 
 1. **Il n'existe pas de cadre national propre au doctorat.** Les textes nationaux qui servent de référence sont généraux : la fiche de l'Ofis de février 2024 sur l'IA générative et la charte-type DemoES publiée par le ministère en septembre 2025. Ce sont les écoles doctorales, les chartes du doctorat et quelques collèges doctoraux qui fixent les règles.
-2. **Les règles propres au doctorat restent rares.** Sur 125 documents universitaires recensés, 11 visent spécifiquement le doctorat, issus de 8 établissements. 5 seulement sont normatifs : chartes du doctorat, règlement intérieur, recommandation à signer, formulaire de déclaration.
-3. **Le mouvement est récent et s'accélère.** 10 des 11 textes doctoraux datent de 2025 ou 2026. Les chartes du doctorat intègrent désormais une section IA : ED de droit de la Sorbonne (2024), EHESS (2025), PSL (2026).
+2. **Les règles propres au doctorat restent rares.** Sur 132 documents universitaires recensés, 12 visent spécifiquement le doctorat, issus de 9 établissements. 5 seulement sont normatifs : chartes du doctorat, règlement intérieur, recommandation à signer, formulaire de déclaration.
+3. **Le mouvement est récent et s'accélère.** 11 des 12 textes doctoraux datent de 2025 ou 2026. Les chartes du doctorat intègrent désormais une section IA : ED de droit de la Sorbonne (2024), EHESS (2025), PSL (2026).
 4. **Le consensus porte sur la transparence et la responsabilité.** Deux tiers des textes doctoraux lus imposent de déclarer l'usage, et autant rappellent que le doctorant reste seul auteur et seul responsable. Aucun texte ne reconnaît l'IA comme auteur.
 5. **Les textes divergent sur la rédaction du manuscrit.** Les positions vont de l'interdiction totale (Institut catholique de Paris, Bordeaux Montaigne) à un usage d'assistance déclaré (Paris-Saclay, PSL, EHESS), en passant par l'accord préalable de la direction de thèse (ED VAAME).
 
@@ -18,10 +18,10 @@ Calculs faits sur `recensement.csv`. Les comptages par établissement sont faits
 
 | Indicateur | Valeur |
 |---|---|
-| Documents recensés (tous émetteurs) | 143 |
-| Documents émanant d'universités ou d'établissements universitaires | 125, issus de 70 établissements |
+| Documents recensés (tous émetteurs) | 150 |
+| Documents émanant d'universités ou d'établissements universitaires | 132, issus de 74 établissements |
 | Établissements avec un cadre IA adopté au niveau central (charte, cadre, principes ou lignes directrices) | 29 confirmés, plus 4 seulement cités (Rennes, Gustave Eiffel, Lyon 1, Nouvelle-Calédonie) |
-| Documents universitaires visant spécifiquement le doctorat | 11 (9 %), dans 8 établissements |
+| Documents universitaires visant spécifiquement le doctorat | 12 (9 %), dans 9 établissements |
 | Documents qui couvrent le doctorat en partie (volet recherche, mention des doctorants) | 18 |
 | Textes doctoraux normatifs | 5 : ED 565 Paris 1 ([U008](documents/U008_universite-paris-1-pantheon-sorbonne.pdf)), ED 441 Paris 1 ([U009](documents/U009_universite-paris-1-pantheon-sorbonne.docx)), PSL ([U033](documents/U033_universite-psl.pdf)), EHESS ([U040](documents/U040_ehess.pdf)), ED 642 VAAME ([U066](documents/U066_etablissements-doctoraux-des-pays-de-la-.pdf)) |
 | Chartes du doctorat intégrant une section IA | 3 : ED de droit de la Sorbonne (2024), EHESS (2025), PSL (2026) |
@@ -31,14 +31,14 @@ Calculs faits sur `recensement.csv`. Les comptages par établissement sont faits
 | Année | Documents universitaires | Premier cadre d'établissement adopté | Textes propres au doctorat |
 |---|---|---|---|
 | 2023 | 2 | 0 | 0 (le collège doctoral normand en débat dès septembre 2023) |
-| 2024 | 11 | 4 | 1 |
-| 2025 | 54 | 17 | 7 |
-| 2026 (jusqu'en novembre) | 44 | 8 | 3 |
-| Non daté | 14 | | |
+| 2024 | 12 | 4 | 1 |
+| 2025 | 57 | 17 | 8 (dont le collège doctoral de Sorbonne Paris Nord, qui annonce un cadre) |
+| 2026 (jusqu'en novembre) | 46 | 8 | 3 |
+| Non daté | 15 | | |
 
 Lecture : l'essentiel de la production date de 2025. Pour le doctorat, le décalage avec les chartes générales est d'environ un an.
 
-**Qui écrit les textes ?** Parmi les 125 documents universitaires, 70 émanent du niveau central (conseils, présidence, services centraux), 43 d'une composante ou d'un service (UFR, IUT, bibliothèque, service de pédagogie) et 12 d'une école ou d'un collège doctoral.
+**Qui écrit les textes ?** Parmi les 132 documents universitaires, 71 émanent du niveau central (conseils, présidence, services centraux), 48 d'une composante ou d'un service (UFR, IUT, bibliothèque, service de pédagogie) et 13 d'une école ou d'un collège doctoral.
 
 ## Tendances
 
@@ -154,14 +154,14 @@ Lecture : déclaration, limite à la rédaction et responsabilité sont présent
 
 ## Méthode et limites
 
-- **Corpus :** recensement de 143 documents publiés depuis 2023 (voir `README.md`). La synthèse s'appuie sur les 29 documents marqués « oui » ou « partiel » pour le doctorat. Les passages sur l'IA ont été lus dans les fichiers téléchargés.
+- **Corpus :** recensement de 150 documents publiés depuis 2023 (voir `README.md`). La synthèse s'appuie sur les 30 documents marqués « oui » ou « partiel » pour le doctorat. Les passages sur l'IA ont été lus dans les fichiers téléchargés.
 - **Matrice :** elle code ce qui figure dans le passage consacré à l'IA de chaque texte. Une case vide signifie que la disposition n'a pas été relevée, pas qu'elle est absente du droit applicable à l'établissement : la charte générale ou le règlement des études peut la prévoir.
 - **Comptages :** faits à partir du tableau. Les dates sont celles d'adoption quand le texte les donne, sinon celles du fichier.
 - **Couverture :** l'absence d'un établissement ne prouve pas l'absence de texte. 21 documents n'ont pas pu être téléchargés, et certaines écoles doctorales publient leurs règles sur des intranets non accessibles.
 
 ## Sources principales
 
-Le recensement complet (143 documents), les copies des documents et cette synthèse sont publiés sur https://github.com/tarikhennen/doctorIA-article (dossier `chartes-ia-universites/`).
+Le recensement complet (150 documents), les copies des documents et cette synthèse sont publiés sur https://github.com/tarikhennen/doctorIA-article (dossier `chartes-ia-universites/`).
 
 **Textes propres au doctorat**
 - [PSL, Charte du doctorat, juin 2026, section 2.7](documents/U033_universite-psl.pdf), copie dans le dépôt ([source d'origine](https://static.psl.eu/sites/default/files/2026-07/ndeg_20-2026.pdf))
@@ -170,6 +170,7 @@ Le recensement complet (143 documents), les copies des documents et cette synth�
 - [Paris 1, ED 441, Déclaration relative à l'utilisation d'outils d'IA](documents/U009_universite-paris-1-pantheon-sorbonne.docx), copie dans le dépôt ([source d'origine](https://ed-histoire-de-l-art.pantheonsorbonne.fr/sites/default/files/2025-09/declaration_ia_ed441.docx))
 - [ED 642 VAAME, règlement intérieur du 5 décembre 2025](documents/U066_etablissements-doctoraux-des-pays-de-la-.pdf), copie dans le dépôt ([source d'origine](https://ed-vaame.doctorat-paysdelaloire.fr/medias/fichier/ri-conseil-maj-du-5-decembre-2025_1770642789567?INLINE=FALSE))
 - [Université Paris-Saclay, Faire un doctorat à l'ère des LLM](documents/U029_universite-paris-saclay.pdf), copie dans le dépôt ([source d'origine](https://www.universite-paris-saclay.fr/sites/default/files/2026-09/presentation_usage_de_lia_doctorat_0.pdf))
+- [Sorbonne Paris Nord, procès-verbal du collège des écoles doctorales du 18 septembre 2025](documents/U138_universite-sorbonne-paris-nord.pdf), copie dans le dépôt ([source d'origine](https://erasme.univ-spn.fr/wp-content/PDF/CED/CED_PV_18_09_25.pdf))
 - [Normandie Université, compte rendu du collège des écoles doctorales du 19 mai 2025](documents/U120_normandie-universite.pdf), copie dans le dépôt ([source d'origine](https://www.normandie-univ.fr/wp-content/uploads/sites/72/2025/06/CR-CED-du-19-mai-2025.pdf))
 - [Université Paris Cité, ED 262, programme de formation 2025-2026](https://ed262.u-paris.fr/wp-content/uploads/sites/8/2025/10/ED262_FD_2025-26.pdf)
 - [Collège doctoral UBFC, Artificial intelligence in doctoral research](documents/U121_universite-bourgogne-europe-ubfc.pdf), copie dans le dépôt ([source d'origine](https://collegedoctoral.ubfc.fr/wp-content/uploads/sites/41/2025/12/Conference-O.-Narsis_compressed.pdf))

@@ -21,9 +21,9 @@ Recensement des textes publiés depuis janvier 2023 par les universités frança
 
 Les chiffres à jour sont en tête de `TABLEAU.md` (régénéré à chaque téléchargement). Au 11 novembre 2026 :
 
-- 143 documents : 125 émanant de 70 universités ou établissements universitaires (établissement, composante ou école doctorale), 6 d'autres établissements d'enseignement supérieur, 12 cadres nationaux.
-- Doctorat : 12 documents propres au doctorat, 19 qui le couvrent en partie.
-- 136 documents téléchargés dans `documents/` (PDF, pages HTML, deux .docx), dont 123 lus et contrôlés (titre, date, passage sur l'IA). Le texte des deux premières pages de chaque PDF est dans `documents/_texte/`.
+- 150 documents : 132 émanant de 74 universités ou établissements universitaires (établissement, composante ou école doctorale), 6 d'autres établissements d'enseignement supérieur, 12 cadres nationaux.
+- Doctorat : 12 documents universitaires propres au doctorat (plus le guide de l'Institut catholique de Paris), 18 qui le couvrent en partie.
+- 143 documents téléchargés dans `documents/` (PDF, pages HTML, deux .docx), dont 130 lus et contrôlés (titre, date, passage sur l'IA). Le texte des deux premières pages de chaque PDF est dans `documents/_texte/`.
 - 5 documents retirés après lecture car hors sujet ou en doublon (`scripts/exclus.txt`).
 
 ## Ce qu'il faut retenir sur le doctorat
@@ -49,7 +49,7 @@ Les chiffres à jour sont en tête de `TABLEAU.md` (régénéré à chaque tél�
    - `Extrait` : vu dans les résultats d'un moteur de recherche, téléchargement en échec.
    - `Cité` : seulement mentionné par une source secondaire.
 5. Une date tirée du dossier de mise en ligne peut différer de la date d'adoption.
-6. L'absence d'une université ne prouve pas l'absence de texte. Établissements sans document propre trouvé après trois passes : Sorbonne Paris Nord, UTC Compiègne, Littoral Côte d'Opale, Antilles, Guyane, Corse. 5 liens restent en échec, même via l'Internet Archive et des adresses de secours, et 2 pages ne contiennent pas le document attendu : Paris Cité (charte d'établissement, erreur serveur), Caen (livre blanc, lien mort sans copie archivée), Toulouse Capitole (serveur muet), INU Champollion (certificat invalide), Le Mans (lien mort sans copie archivée) ; Lyon 1 et Grenoble Alpes (page à accès restreint ou lien invalide) : ces lignes gardent la mention `Extrait` ou `Cité`. Pau, Toulouse Jean Jaurès et Artois n'ont que des clauses d'examen ou des projets annoncés.
+6. L'absence d'une université ne prouve pas l'absence de texte. Établissements sans document trouvé après quatre passes : Guyane et Corse. Sorbonne Paris Nord, UTC, Littoral Côte d'Opale et Antilles n'ont que des clauses dans des règlements ou guides d'études, ou un projet annoncé. 5 liens restent en échec, même via l'Internet Archive et des adresses de secours, et 2 pages ne contiennent pas le document attendu : Paris Cité (charte d'établissement, erreur serveur), Caen (livre blanc, lien mort sans copie archivée), Toulouse Capitole (serveur muet), INU Champollion (certificat invalide), Le Mans (lien mort sans copie archivée) ; Lyon 1 et Grenoble Alpes (page à accès restreint ou lien invalide) : ces lignes gardent la mention `Extrait` ou `Cité`. Pau, Toulouse Jean Jaurès et Artois n'ont que des clauses d'examen ou des projets annoncés.
 
 ## Télécharger ou mettre à jour les documents
 
