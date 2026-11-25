@@ -1,0 +1,6 @@
+# Adresses de secours, essayées avant l'Internet Archive quand l'adresse principale échoue
+# ID | URL
+U036 | https://inalco.fr/en/artificial-intelligence-usage-guide
+U043 | https://www.uphf.fr/en/node/6220
+U090 | https://numerique.univ-jfc.fr/sites/numerique.univ-jfc.fr/files/Charte%20IA%202025_1.pdf
+U090 | https://univ-jfc.fr/sites/default/files/2025-11/Charte%20IA%202025_0.pdf

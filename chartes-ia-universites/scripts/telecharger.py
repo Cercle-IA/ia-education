@@ -75,6 +75,13 @@ def main():
     only_doc = "--doctorat" in sys.argv
     OUT.mkdir(exist_ok=True)
     rows = list(csv.DictReader(CSV_PATH.open(encoding="utf-8")))
+    secours = {}
+    alt = ROOT / "scripts" / "alternatives.txt"
+    if alt.exists():
+        for ligne in alt.read_text(encoding="utf-8").splitlines():
+            if ligne.strip() and not ligne.startswith("#"):
+                k, v = [x.strip() for x in ligne.split("|", 1)]
+                secours.setdefault(k, []).append(v)
     log = []
     existants = {p.name.split("_")[0]: p.name for p in OUT.iterdir()
                  if p.is_file() and not p.name.startswith("_")}
@@ -100,11 +107,20 @@ def main():
             try:
                 status, ctype, data = fetch(url)
             except Exception as e1:  # noqa: BLE001
-                # Repli : copie archivée par l'Internet Archive (Wayback Machine)
-                try:
-                    source, status, ctype, data = archive(url)
-                except Exception as e2:  # noqa: BLE001
-                    raise RuntimeError(f"{e1} ; archive : {e2}") from e2
+                data = None
+                for autre in secours.get(row["ID"], []):
+                    try:
+                        status, ctype, data = fetch(autre)
+                        source = autre
+                        break
+                    except Exception:  # noqa: BLE001
+                        data = None
+                if data is None:
+                    # Repli : copie archivée par l'Internet Archive (Wayback Machine)
+                    try:
+                        source, status, ctype, data = archive(url)
+                    except Exception as e2:  # noqa: BLE001
+                        raise RuntimeError(f"{e1} ; archive : {e2}") from e2
             if data[:2] == b"\x1f\x8b":  # réponse compressée non décodée
                 data = gzip.decompress(data)
             ext = "pdf" if ("pdf" in ctype or data[:4] == b"%PDF") else (
