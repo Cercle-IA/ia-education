@@ -1,0 +1,99 @@
+                                 Charte d’intégrité scientifique
+                          (votée par le Conseil de Gestion du 11.09.2025)
+La présente charte a pour objectif d’informer les étudiantes et étudiants de l’Université Paris Cité des
+règles en vigueur à l’Institut de Psychologie concernant le plagiat, l’intégrité scientifique et
+l’encadrement de l’utilisation des outils d’intelligence artificielle générative (IAG). Elle vise à
+promouvoir une démarche d’honnêteté intellectuelle rigoureuse et à sensibiliser aux responsabilités
+individuelles liées à la production de travaux académiques.
+L’étudiant ou l’étudiante est pleinement responsable du contenu des documents qu’il ou elle produit,
+y compris lors de l’usage d’une IAG. L’étudiant ou l’étudiante doit veiller à la qualité, à la véracité et à
+la traçabilité des informations mobilisées. En cas de doute, l’équipe pédagogique pourra convoquer
+l’étudiant ou l’étudiante, qui devra alors être en mesure de justifier oralement sa démarche, les choix
+effectués et l’usage éventuels de l’IAG.
+En signant cette charte, l’étudiant ou l’étudiante reconnaît en avoir pris connaissance et s’engage dans
+une démarche d’honnêteté intellectuelle conforme au Code de la propriété intellectuelle et aux
+attendus en termes de connaissances et compétences à acquérir pour l’obtention du diplôme.
+1. Rappel du cadre réglementaire
+L’article 6 du règlement des examens et des jurys (CEVU du 12 juin 2008 – CA du 17 juin 2008 ;
+Modifié par la CFVU du 9 décembre 2014 et du 20 janvier 2015) reconnaît le plagiat comme une
+forme de fraude aux examens. Toute appropriation, totale ou partielle, du travail d’autrui sans
+citation explicite constitue une violation de ce règlement.
+
+Cette règle s’applique également aux contenus générés par une intelligence artificielle. En effet,
+« l’appropriation par autrui ou une IAG est constitutive d’une fraude susceptible d’être poursuivie et
+sanctionnée, […], en application des dispositions des articles R. 811-1 et suivants du code de
+l’éducation. […]. Les sanctions peuvent aller jusqu’à l’exclusion de tout établissement public
+d’enseignement supérieur. » (Source : Réponse du Ministère de l’enseignement supérieur et de la
+recherche publiée le 07/09/2023).
+
+2. Le Plagiat
+
+        2.1 Définition
+
+Conformément au code la propriété intellectuelle, le plagiat consiste en la « représentation ou
+reproduction intégrale ou partielle d’une œuvre de l’esprit faite [avec ou] sans le consentement de
+son auteur », à l’exception, « sous réserve que soient indiqués clairement le nom de l'auteur et la
+source […] des analyses et courtes citations justifiées par le caractère critique, polémique,
+pédagogique, scientifique ou d'information de l'œuvre à laquelle elles sont incorporées ».
+
+Ainsi, « le plagiat est constitué lorsque l’étudiant [ou l’étudiante] a rendu un travail qui ne permet pas
+de distinguer sa pensée propre d’éléments d’autres auteurs : il peut se caractériser par l’absence de
+citation d’un groupe de mots consécutifs, par la reformulation ou la traduction, par la copie. »
+(Source: Charte antiplagiat – Sciences Po, Règlement de scolarité de l’IEP de Paris : Article 12 -
+honnêteté intellectuelle).
+Le règlement intérieur de l’Université Paris Cité dispose que :
+
+« Article 6 - Plagiat – Contrefaçon
+
+6.1. Conformément au code de la propriété intellectuelle, toute représentation ou reproduction
+intégrale ou partielle d’une œuvre de l’esprit faite sans le consentement de son auteur est illicite.
+
+6.2. La contrefaçon ou le plagiat peuvent donner lieu à une sanction disciplinaire indépendante de la
+mise en œuvre de poursuites civiles et pénales. »
+
+Par exemple, constitue un plagiat :
+    -   Le fait de recopier du texte produit par autrui (sans mettre les guillemets), des figures, des
+        tableaux, des graphiques, des données statistiques… sans citer les sources (nom de l’auteur,
+        année, page) et la référence en fin de document. Ceci vaut quel que soit le type de support
+        sur lequel le document original est publié (y compris internet).
+    -   Le fait de réaliser de l’auto-plagiat en recopiant son propre travail, déjà noté, en vue de le
+        présenter pour une évaluation dans une autre UE.
+    -   Le fait de s’approprier des idées sachant qu’elles ont été élaborées par autrui.
+
+        2.2 Prévention
+
+Les enseignants ont, notamment, accès à un logiciel informatique anti-plagiat sur lequel les travaux
+produits par les étudiants sont téléchargés pour en vérifier l’originalité.
+
+Une information sur le plagiat, les règles de rédaction et d’utilisation de sources, est spécifiquement
+délivrée dès la pré-rentrée et dans l’UE Méthodes et Pratiques Professionnelles du Psychologue 1
+(MPPP1) en L1S1 ainsi que, les années suivantes, dans les UE dont la validation repose sur un
+mémoire, rapport ou dossier, notamment en APR et TERL.
+
+Ces informations sont également disponibles sur le site des bibliothèques universitaires de
+l’Université Paris Cité et sur Moodle.
+
+En cas de doute sur la façon de se référer aux travaux d’autrui, il est recommandé de demander
+conseil aux enseignants ou aux services de documentation de l’Institut de Psychologie.
+
+3. Intelligence artificielle générative (IAG)
+
+        3.1 Définition
+
+Selon le Parlement européen, l’intelligence artificielle est définie comme tout outil utilisé par une
+machine capable de « reproduire des comportements liés aux humains, tels que le raisonnement, la
+planification et la créativité » (Source : Ministère de l’enseignement supérieur et de la recherche :
+ici).
+
+        3.2 Encadrement de l’usage des IAG
+
+L’usage des IAG (ex : ChatGPT, Copilot, Gemini, etc.), c’est-à-dire des outils capables de produire du
+contenu de manière autonome sous forme de texte, d’images, de code, de musique, etc., est
+strictement encadré dans le cadre des travaux académiques. L’usage des IAG est uniquement autorisé
+lorsqu’il soutient l’apprentissage, le développement des compétences et la qualité formelle des
+productions, sans jamais se substituer aux réflexions personnelles de l’étudiant ou de l’étudiante.
+
+ Les usages tolérés de l’IAG sont définis sous la responsabilité de chaque enseignant ou enseignante
+responsable de l’enseignement, en fonction des objectifs pédagogiques du cours et sont précisés dans
+la fiche d’information présente dans la brochure de l’enseignement.
+

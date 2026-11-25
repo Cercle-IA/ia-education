@@ -56,6 +56,9 @@ def journal():
 
 def load():
     rows, jr = [], journal()
+    dossier = ROOT / "documents"
+    presents = {f.name.split("_")[0]: f.name for f in dossier.iterdir()
+                if f.is_file() and not f.name.startswith("_")} if dossier.exists() else {}
     for line in SRC.read_text(encoding="utf-8").splitlines():
         if not line.strip() or line.startswith("#"):
             continue
@@ -68,6 +71,11 @@ def load():
             statut = "contenu non probant (accès restreint ou lien invalide)"
         elif j and j["Statut"] in ("200", "déjà présent"):
             fichier = "documents/" + j["Fichier"]
+            statut = "téléchargé"
+            if verif != "Cité":
+                verif = "Document lu"
+        elif rid in presents:
+            fichier = "documents/" + presents[rid]
             statut = "téléchargé"
             if verif != "Cité":
                 verif = "Document lu"

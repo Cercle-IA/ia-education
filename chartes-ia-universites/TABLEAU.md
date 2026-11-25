@@ -2,7 +2,7 @@
 
 Recensement établi en novembre 2026. 143 documents : 125 issus de 70 universités ou établissements universitaires, 6 d'autres établissements, 12 cadres nationaux. 12 documents sont propres au doctorat, 19 le couvrent en partie.
 
-124 documents téléchargés dans `documents/` et lus ; 16 téléchargements en échec (liens morts, serveurs indisponibles, certificats invalides).
+125 documents téléchargés dans `documents/` et lus ; 16 téléchargements en échec (liens morts, serveurs indisponibles, certificats invalides).
 
 Fichiers : `recensement.csv` et `recensement.xlsx` (onglets Doctorat, Universités, Cadres nationaux, Sources, Légende). Les colonnes complètes (public, URL page et PDF, note) sont dans ces fichiers.
 
@@ -50,7 +50,7 @@ Fichiers : `recensement.csv` et `recensement.xlsx` (onglets Doctorat, Universit�
 | U121 | Université Bourgogne Europe / UBFC | Collège doctoral UBFC | Artificial intelligence in doctoral research: opportunities, challenges and limitations (Doctoral Welcome Day) | guide (support) | oui | 2025-11 | [PDF](https://collegedoctoral.ubfc.fr/wp-content/uploads/sites/41/2025/12/Conference-O.-Narsis_compressed.pdf) · [copie](documents/U121_universite-bourgogne-europe-ubfc.pdf) | Document lu |
 | U123 | Université Paris Cité | École doctorale 262 | Programme de formation doctorale 2025-2026 (cours Utilisation responsable de l'IA dans le travail de thèse) | formation (programme) | oui | 2025-10 | [PDF](https://ed262.u-paris.fr/wp-content/uploads/sites/8/2025/10/ED262_FD_2025-26.pdf) | Extrait |
 | A001 | Institut catholique de Paris | Collège des écoles doctorales | Guide d'accompagnement à la formation doctorale 2025-2026 | guide (clause) | oui | 2025 | [PDF](https://www.icp.fr/medias/fichier/guide-ced-_1777470525636-pdf) · [copie](documents/A001_institut-catholique-de-paris.pdf) | Document lu |
-| N006 | Ofis (Hcéres) | Ofis | Systèmes d'intelligence artificielle générative : quelques points de vigilance | recommandations | partiel | 2024-02 |  | Extrait |
+| N006 | Ofis (Hcéres) | Ofis | Systèmes d'intelligence artificielle générative : quelques points de vigilance | recommandations | partiel | 2024-02 |  · [copie](documents/N006_ofis-hceres.pdf) | Document lu |
 
 ## Tous les documents
 
@@ -192,7 +192,7 @@ Fichiers : `recensement.csv` et `recensement.xlsx` (onglets Doctorat, Universit�
 | N003 | MESR | Mission | Intelligence artificielle et enseignement supérieur : formation, structuration et appropriation par la société (rapport) | note (rapport) | non | 2025-07 | [PDF](https://www.enseignementsup-recherche.gouv.fr/sites/default/files/2025-07/rapport-intelligence-artificielle-et-enseignement-sup-rieur-formation-structuration-et-appropriation-par-la-soci-t--37540.pdf) · [copie](documents/N003_mesr.pdf) | Document lu |
 | N004 | MESR | DGESIP | Cycle de webinaires IA Sup (supports) | ressources | non | 2025-09 | [PDF](https://www.canal-u.tv/sites/default/files/medias/fichiers/2025/09/250909-IA%20Sup-Webinaire%201-0-Pr%C3%A9sentations%20compil%C3%A9es.pdf) | Extrait |
 | N005 | DGESIP et France Universités | COREALE | Analyser l'impact de l'IA sur les pratiques et dispositifs d'enseignement supérieur | note (rapport) | non | 2025-02 | [PDF](https://www.campusmatin.com/file/c9a281e3658500b8e302001cba974cbe/coreale-analyser-impact-ia-pratiques-dispositifs-enseignement-superieur.pdf) · [copie](documents/N005_dgesip-et-france-universites.pdf) | Document lu |
-| N006 | Ofis (Hcéres) | Ofis | Systèmes d'intelligence artificielle générative : quelques points de vigilance | recommandations | partiel | 2024-02 |  | Extrait |
+| N006 | Ofis (Hcéres) | Ofis | Systèmes d'intelligence artificielle générative : quelques points de vigilance | recommandations | partiel | 2024-02 |  · [copie](documents/N006_ofis-hceres.pdf) | Document lu |
 | N007 | Ofis (Hcéres) | Ofis | Infolettre n°10 (février 2024) : IA, les filigranes au service de l'intégrité scientifique | note | non | 2024-02 | [PDF](https://www.enssib.fr/bibliotheque-numerique/documents/71866-infolettre-de-l-ofis-n-10-fevrier-2024.pdf) · [copie](documents/N007_ofis-hceres.pdf) | Document lu |
 | N008 | CNPEN (CCNE) | CNPEN | Avis 7 : systèmes d'intelligence artificielle générative, enjeux d'éthique | note (avis) | non | 2023-07 | [PDF](https://www.ccne-ethique.fr/sites/default/files/2023-07/CNPEN-Avis7-%20SIAgen-enjeux%20d%27e%CC%81thique-2023-07-04-web.pdf) · [copie](documents/N008_cnpen-ccne.pdf) | Document lu |
 | N009 | ANR | ANR | Charte IA déposants et évaluateurs | charte | non | 2026-06 | [PDF](https://anr.fr/fileadmin/documents/2026/ANR-Charte-IA-deposants-evaluateurs-10062026.pdf) · [copie](documents/N009_anr.pdf) | Document lu |

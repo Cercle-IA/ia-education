@@ -11,6 +11,7 @@ Un journal est écrit dans documents/_journal.csv (statut HTTP, taille, empreint
 Aucune dépendance externe : bibliothèque standard Python 3.8+.
 """
 import csv
+import gzip
 import hashlib
 import re
 import sys
@@ -104,6 +105,8 @@ def main():
                     source, status, ctype, data = archive(url)
                 except Exception as e2:  # noqa: BLE001
                     raise RuntimeError(f"{e1} ; archive : {e2}") from e2
+            if data[:2] == b"\x1f\x8b":  # réponse compressée non décodée
+                data = gzip.decompress(data)
             ext = "pdf" if ("pdf" in ctype or data[:4] == b"%PDF") else (
                 "docx" if "word" in ctype else "html")
             name = f'{row["ID"]}_{slug(row["Etablissement"])}.{ext}'
