@@ -1,0 +1,92 @@
+                                                                                          CHARTE IA
+                                                                                          Septembre 2025
+
+
+
+Préambule
+Les 15 cursus membres de la Conférence des écoles de journalisme (CEJ) ont validé collectivement, à l’été 2025, le principe
+d’un texte énonçant des principes communs sur les intelligences artificielles (IA), en lien avec ses usages professionnels et
+dans le contexte de l’enseignement du métier.
+
+Il s’agit de disposer ainsi d’un cadre utile aux écoles désireuses de se doter d’une charte IA mais aussi de se mettre en situa-
+tion de contribuer, avec une position commune, à la réflexion avec d’autres instances, à commencer par la CPNEJ.
+
+Les 15 cursus membres de la Conférence des écoles de journalisme (CEJ) ont souhaité construire ce texte autour de deux
+axes, qui distinguent les engagements et responsabilités des écoles d’une part et les engagements et responsabilités des
+journalistes en formation d’autre part.
+Ils ont également énoncé les principes fondamentaux suivants :
+• La prééminence de l’humain dans la démarche journalistique et ses traductions éditoriales ;
+• La nécessité de la création et du maintien d’espaces de dialogue autour des usages des IA ;
+• Le respect – en toutes circonstances – des textes de référence sur la déontologie et l’éthique du journalisme.
+
+Engagements et responsabilités des écoles
+1. Former leurs étudiant·es à la connaissance de la technologie des IA, de ses applications professionnelles, ses outils, ainsi
+qu’aux risques (erreurs, dépendance, etc.) d’une utilisation non raisonnée. Déconstruire les idées reçues sur les IA et lutter
+contre la dépendance que celle-ci peut susciter.
+2. Observer l’évolution des IA et de leurs usages dans les médias et en tenir compte dans leurs enseignements, sans jamais
+oublier le recul nécessaire en matière d’analyse critique.
+3. Élaborer des modalités d’évaluation permettant d’apprécier au mieux la capacité des étudiant·es à travailler de manière
+autonome, lorsque la consigne est de produire un travail sans IA.
+4. Signaler et expliciter les usages que leurs enseignant·es et intervenant·es pourraient faire de l’IA dans leurs cours.
+5. Apporter leur contribution à toute concertation dont ils auraient connaissance portant sur la gouvernance de l’IA, en lien
+avec leur champ de compétence.
+
+Engagements et responsabilités des journalistes en formation
+1. Porter la responsabilité de leur propre progression pédagogique, ce qui implique de s’autodiscipliner sur l’usage des IA et
+de faire preuve de transparence sur le recours aux IA dans les différentes productions (textes, images…).
+2. Respecter les consignes émises par leurs enseignant·es sur les usages permis/proscrits de l’IA, selon les enseignements
+et types de compétences en cours d’acquisition.
+3. Assumer la pleine responsabilité de leurs productions, y compris si celles-ci résultent d’un usage, même partiel, des IA
+(risques des différents biais algorithmiques des IA, nécessité de vérification, etc.).
+4. Veiller au respect de la vie privée et à la protection de leurs sources, en ne transmettant en aucun cas des données per-
+sonnelles ou confidentielles à des IA grand public.
+5. Livrer, en toutes circonstances, des productions académiques et journalistiques qui respectent strictement les règles
+éthiques et déontologiques inscrites dans les textes de référence de la profession (véracité, exactitude, équité, impartialité,
+indépendance, non-nuisance, non-discrimination, responsabilité, respect de la vie privée, confidentialité des sources, etc.).
+
+
+
+                                                                                                                             1/5
+                    Centre universitaire
+    Cuej            d'enseignement du journalisme
+            Université de Strasbourg
+
+
+
+
+      Lignes directrices pour l’usage
+     des IA génératives au sein du Cuej
+
+PRÉAMBULE
+La présente charte s’adresse aux étudiant·es et aux enseignant·es du Cuej. Elle vise à apporter des indications claires sur les
+usages permis et proscrits des IA génératives dans le cadre de la formation. Elle s’inspire des principes déjà énoncés dans
+plusieurs chartes élaborées dans le secteur du journalisme pour un usage éthique et professionnellement exigeant de ces
+outils[1]. Mais elle souhaite également prendre en compte les spécificités du public étudiant. Les étudiant·es sont en effet
+des adultes en situation de formation, ayant donc des besoins spécifiques. Un usage inapproprié des IA génératives pourrait
+ralentir, voire entraver, l’apprentissage de plusieurs compétences cognitives et pratiques. Tout·e enseignant·e intervenant au
+Cuej est prié.e de prendre connaissance de ces indications avant d’élaborer le programme de son propre cours. Cette charte
+est susceptible d’être mise à jour régulièrement afin de prendre en compte les évolutions technologiques des IA génératives.
+
+
+PRINCIPES GÉNÉRAUX
+Responsabilité et éthique
+Toute personne usagère reste éthiquement et juridiquement responsable des contenus qu’elle produit. L’utilisation d’IA gé-
+nératives doit toujours arriver au terme d’une réflexion humaine, au cas par cas, prenant en compte les limites et les risques
+de ces outils. Elle doit être suivie d’un retour réflexif sur l’expérience, sous forme de réunions ou de discussions informelles
+entre étudiant·es et enseignant·es. Ainsi, dans l’idéal, l’utilisation d’IA devrait donner lieu à des boucles dites «humain/ma-
+chine/humain».
+
+Dans un contexte d’enseignement du journalisme, l’objectif principal est la formation des étudiant·es à la production d’une
+information de qualité, dans le respect de l’éthique professionnelle. L’utilisation d’IA doit notamment être compatible avec :
+• Le respect de la véracité, de l’exactitude et de l’impartialité. Concernant ce point, il est important de prendre en compte
+que les IA génératives sont des outils probabilistes, susceptibles de générer des erreurs. Un travail systématique de vérifi-
+cation est donc nécessaire.
+• Le refus de toute discrimination, incitation à la haine ou reproduction de stéréotypes. À ce sujet, il est essentiel de
+comprendre que le fonctionnement des IA les rend susceptibles de véhiculer des préjugés et des biais basés sur les apparte-
+nances sociales. Il faut donc être particulièrement vigilant à ne pas les reproduire.
+• Le respect de la vie privée, de la propriété intellectuelle et de la confidentialité de certaines informations et sources. Ce
+
+
+
+                                                                                                                             2/5
+
